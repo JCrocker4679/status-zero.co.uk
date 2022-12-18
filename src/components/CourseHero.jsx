@@ -1,8 +1,9 @@
 import Image from 'next/image'
 
-import { Button } from '@/components/CourseButton'
+import { Button } from '@/components/Button'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
+import backgroundImage from '@/images/background-features.jpg'
 import coverImage from '@/images/cover.png'
 
 function Testimonial() {
@@ -18,7 +19,7 @@ function Testimonial() {
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">
-        <strong className="font-semibold text-blue-900 before:content-['—_']">
+        <strong className="font-semibold text-blue-600 before:content-['—_']">
           Joe Giddens
         </strong>
         , Director of Content & Marketing, Cybsafe (ex-cop)
@@ -29,22 +30,30 @@ function Testimonial() {
 
 export function CourseHero() {
   return (
-    <header className="overflow-hidden bg-slate-100 lg:bg-transparent lg:px-5">
+    <header className="overflow-hidden bg-white lg:bg-transparent lg:px-5">
       <div className="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 pt-16 md:pt-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:pt-20 xl:py-32">
         <div className="relative flex items-end lg:col-span-5 lg:row-span-2">
-          <div className="absolute -top-20 -bottom-12 left-0 right-1/2 z-10 rounded-br-6xl bg-blue-900 text-white/10 md:bottom-8 lg:-inset-y-32 lg:right-full lg:left-[-100vw] lg:-mr-40">
-            <GridPattern
+          <div className="absolute -top-20 -bottom-12 left-0 right-1/2 z-10 overflow-clip rounded-br-6xl bg-blue-800 text-white/10 md:bottom-8 lg:-inset-y-32 lg:right-full lg:left-[-100vw] lg:-mr-40">
+            <Image
+              className="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
+              src={backgroundImage}
+              alt=""
+              width={2245}
+              height={1636}
+              unoptimized
+            />
+            {/* <GridPattern
               x="100%"
               y="100%"
               patternTransform="translate(112 64)"
-            />
+            /> */}
           </div>
-          <div className="relative z-10 mx-auto flex w-64 rounded-2xl drop-shadow-xl md:w-80 lg:w-auto">
+          <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-slate-500 shadow-xl md:w-80 lg:w-auto">
             <Image className="w-full" src={coverImage} alt="" priority />
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pr-0 lg:pb-14 lg:pl-16 xl:pl-20">
-          <div className="hidden lg:absolute lg:bottom-0 lg:-top-32 lg:right-[-100vw] lg:left-[-100vw] lg:block lg:bg-slate-100" />
+          <div className="hidden lg:absolute lg:bottom-0 lg:-top-32 lg:right-[-100vw] lg:left-[-100vw] lg:block lg:bg-white" />
           <Testimonial />
         </div>
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">

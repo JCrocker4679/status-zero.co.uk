@@ -11,60 +11,62 @@ const testimonials = [
   [
     {
       content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+        "Joe Crocker's advice is straight magic. If you're looking to leave the job, follow him 🏹",
       author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
-        image: avatarImage1,
-      },
-    },
-    {
-      content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
-      },
-    },
-  ],
-  [
-    {
-      content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
-      author: {
-        name: 'Leland Kiehn',
+        name: 'Joe Giddens',
         role: 'Founder of Kiehn and Sons',
         image: avatarImage5,
       },
     },
     {
       content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
+        'Joe has assisted with translating a career of experience and skills into a CV that translates the public sector private sector language difference. In doing so, Joe’s guidance has demystified the systems, processes, terminology and cultures involved and how my experience should be articulated to transcend such. It has been a painless and developmental experience, made so by the depth and breadth of Joe’s knowledge and emotionally intelligence approach to engagement. Joe’s ability to be succinct, straight talking and frank has been especially refreshing.',
       author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
-        image: avatarImage2,
+        name: 'Steve',
+        role: 'Director at Velocity Industries',
+        image: avatarImage4,
       },
     },
   ],
   [
     {
       content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
+        'Massive thanks to Joe Crocker for his help and support in working with me on the development of my CV. If you are looking to transition from Policing to the Private sector and you have not seen his page, then you are missing a trick. His daily updates are invaluable and you really should visit his page. Thanks again Joe.',
       author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
-        image: avatarImage3,
+        name: 'Ian Cocklin',
+        role: 'CEO at Lynch LLC',
+        image: avatarImage1,
+      },
+    },
+
+    {
+      content:
+        'Another day and more great advice from Joe Crocker. Joe has kindly collated lots of fantastic advice onto his feed that I know works. Take confidence from Joe’s advice because it’s true.',
+      author: {
+        name: 'John Clifford',
+        role: 'Director at Velocity Industries',
+        image: avatarImage4,
+      },
+    },
+  ],
+
+  [
+    {
+      content:
+        'Joe has taken time, to review my CV and do a report. This is all his own time and did not know who I was Friday. I think this is above and beyond. Get in touch with Joe if you need advice. Highly recommend. Thanks Joe',
+      author: {
+        name: 'Erin Powlowski',
+        role: 'COO at Armstrong Inc',
+        image: avatarImage2,
       },
     },
     {
       content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
+        "I reached out to Joe through LinkedIn after I found myself confused, scared and generally clueless at were to start with leaving the police. Joe was amazing in his quick response to messages and arranging a zoom chat. I went into the zoom chat not really knowing what Joe could do for me, but left feeling proud of what I've achieved, excited for what I can bring to a new role and inspired to apply to jobs I had previously been too scared to apply to.",
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
+        name: 'Peter Renolds',
+        role: 'Founder of West Inc',
+        image: avatarImage3,
       },
     },
   ],
@@ -82,13 +84,13 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      aria-label="What our customers are saying"
+      aria-label="Some nice things people have said"
       className="bg-slate-50 py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Loved by businesses worldwide.
+            Nice things people have said...
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Our software is so simple that people can’t help but fall in love

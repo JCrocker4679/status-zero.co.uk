@@ -3,17 +3,24 @@ import Image from 'next/image'
 import { Container } from '@/components/CourseContainer'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
+import backgroundImage from '@/images/background-faqs.jpg'
 
 export function Testimonial({ id, author, children }) {
   return (
     <aside
       id={id}
       aria-label={`Testimonial from ${author.name}`}
-      className="relative bg-slate-100 py-16 sm:py-32"
+      className="relative overflow-clip bg-slate-50 py-16 sm:py-32"
     >
-      <div className="text-slate-900/10">
-        <GridPattern x="50%" patternTransform="translate(0 80)" />
-      </div>
+      <Image
+        className="absolute top-0 left-1/3 max-w-none translate-x-[-30%] -translate-y-1/4"
+        src={backgroundImage}
+        alt=""
+        width={1558}
+        height={946}
+        unoptimized
+      />
+      <div className="text-slate-900/10"></div>
       <Container size="xs" className="relative">
         <figure>
           <div className="flex text-slate-900 sm:justify-center">

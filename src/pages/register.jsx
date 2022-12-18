@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/CourseButton'
 import { SelectField, TextField } from '@/components/Fields'
-import { Logo } from '@/components/Logo'
+import Logo from '@/images/statusZeroFull.png'
 
 export default function Register() {
   return (
@@ -15,7 +16,7 @@ export default function Register() {
       <AuthLayout>
         <div className="flex flex-col">
           <Link href="/" aria-label="Home">
-            <Logo className="h-10 w-auto" />
+            <Image src={Logo} width={128} height={48} alt="status zero" />
           </Link>
           <div className="mt-20">
             <h2 className="text-lg font-semibold text-gray-900">

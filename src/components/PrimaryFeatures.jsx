@@ -5,36 +5,35 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import leap from '@/images/photos/leap.jpeg'
+import community from '@/images/photos/community.jpeg'
+import interview from '@/images/photos/interview.jpeg'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Resettlement Course',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      "Your step-by-step guide to make a successful transition from policing to your next chapter with, our 30-day online cohort based course, you'll be ready to make the leap in no time.",
+    image: leap,
   },
   {
-    title: 'Claim expenses',
+    title: 'CV Services',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      "Need some help with your job application? We've crafted 100s of CVs that get cops interviews in the private sector by helping hiring managers make sense of your skills and experience",
+    image: interview,
   },
   {
-    title: 'VAT handling',
+    title: 'Supportive Community',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      'Be part of a growing community of ex-police officers who left the job succesfully, with the skills, knowledge and resources to help you do the same',
+    image: community,
   },
-  {
-    title: 'Reporting',
-    description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
-  },
+  // {
+  //   title: 'Reporting',
+  //   description:
+  //     'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+  //   image: screenshotReporting,
+  // },
 ]
 
 export function PrimaryFeatures() {
@@ -72,11 +71,12 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Everything you need to make a successful transition
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Leaving the police can be overwhelming. If you don&apos;t know where
+            to start, or how to make the most of your existing skills, we can
+            help.
           </p>
         </div>
         <Tab.Group
@@ -140,7 +140,7 @@ export function PrimaryFeatures() {
                         src={feature.image}
                         alt=""
                         priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                        // sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
                       />
                     </div>
                   </Tab.Panel>
