@@ -29,7 +29,7 @@ export default function Home() {
         <PrimaryFeatures />
         {/* <SecondaryFeatures /> */}
         <Testimonials />
-        <NewsletterSignup />
+        <CallToAction />
         <Author1 />
         {/* <Pricing /> */}
         {/* <Faqs /> */}

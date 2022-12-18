@@ -11,21 +11,21 @@ import interview from '@/images/photos/interview.jpeg'
 
 const features = [
   {
-    title: 'Resettlement Course',
+    title: 'Online Course',
     description:
-      "Your step-by-step guide to make a successful transition from policing to your next chapter with, our 30-day online cohort based course, you'll be ready to make the leap in no time.",
+      'The step-by-step guide to making a successful transition from policing to your next chapter.',
     image: leap,
   },
   {
-    title: 'CV Services',
+    title: 'CV Writing',
     description:
-      "Need some help with your job application? We've crafted 100s of CVs that get cops interviews in the private sector by helping hiring managers make sense of your skills and experience",
+      "Need some help with your job application? We've crafted 100s of CVs that get cops interviews in the private sector.",
     image: interview,
   },
   {
-    title: 'Supportive Community',
+    title: 'Community',
     description:
-      'Be part of a growing community of ex-police officers who left the job succesfully, with the skills, knowledge and resources to help you do the same',
+      'Join a growing community of ex-police officers who left the job succesfully, with knowledge and resources to help you do the same.',
     image: community,
   },
   // {
@@ -71,12 +71,11 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to make a successful transition
+            Support for Police Officers, by ex-Police Officers
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Leaving the police can be overwhelming. If you don&apos;t know where
-            to start, or how to make the most of your existing skills, we can
-            help.
+            Leaving the police can be overwhelming. We can help you maake the
+            most of your unique strengths and unlock your potential.
           </p>
         </div>
         <Tab.Group
@@ -134,13 +133,13 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="mt-10 w-auto overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-auto xl:w-[50rem]">
                       <Image
                         className="w-full"
                         src={feature.image}
                         alt=""
                         priority
-                        // sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
                       />
                     </div>
                   </Tab.Panel>

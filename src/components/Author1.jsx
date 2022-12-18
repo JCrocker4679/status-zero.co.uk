@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { GridPattern } from '@/components/GridPattern'
-import { SectionHeading } from '@/components/SectionHeading'
 import authorImage from '@/images/avatars/author2.png'
 
 function LinkedinIcon(props) {
@@ -38,25 +37,35 @@ export function Author1() {
               Creator
             </SectionHeading> */}
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-blue-600">Joe Crocker –</span> Hey
+              <span className="block text-blue-700">Joe Crocker –</span> Hey
               there, I’m the ex-cop behind Status Zero.
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              I’ve been designing icons professionally for over a decade and
-              have worked with dozens of the biggest brands to create custom
-              sets for their products. I’m an accomplished conference speaker,
-              and have been teaching icon design workshops every month for the
-              last three years. I’ve worked with designers of all skill levels
-              and honed my way of teaching to really click for anyone who has
-              the itch to start designing their own icons.
+              I left policing after 9 years. With 2 kids, a mortgage and some
+              challenging personal circumstances, I felt more broke than I did
+              as a student. I didn&apos;t want to leave those skills behind for
+              a &apos;promotion&apos; to custody, main office or traffic, but I
+              needed to make more money.
+            </p>
+            <p className="mt-4 text-lg tracking-tight text-slate-700">
+              I left policing for a start-up 4 years ago. Doubled my salary.
+              10x&apos;d my quality of life. I&apos;ve worked as a hiring
+              manager for 2 tech start-ups for over 10 different roles and
+              reviewed 100s of CVs.{' '}
+            </p>
+            <p className="mt-4 text-lg tracking-tight text-slate-700">
+              Now, I write on LinkedIn every day to thousands of unsettled
+              police officers looking for help in making their own career
+              transitions, and am growing the Status Zero support community as
+              best I can.
             </p>
             <p className="mt-8">
               <Link
                 href="#"
-                className="inline-flex items-center text-base font-medium tracking-tight text-blue-600"
+                className="inline-flex items-center text-base font-medium tracking-tight text-blue-700"
               >
                 <LinkedinIcon className="h-10 w-10 fill-current" />
-                <span className="ml-4">Follow on LinkedIn</span>
+                <span className="ml-4">Follow me on LinkedIn</span>
               </Link>
             </p>
           </div>

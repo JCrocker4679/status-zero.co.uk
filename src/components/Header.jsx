@@ -109,9 +109,7 @@ export function Header() {
               <NavLink href="/login">Sign in</NavLink>
             </div> */}
             <Button href="/register" color="blue">
-              <span>
-                Join the course <span className="hidden lg:inline">today</span>
-              </span>
+              <span>Sign up for the course</span>
             </Button>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />

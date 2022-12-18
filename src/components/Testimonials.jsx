@@ -1,20 +1,21 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
-import avatarImage4 from '@/images/avatars/avatar-4.png'
-import avatarImage5 from '@/images/avatars/avatar-5.png'
+import avatarImage1 from '@/images/avatars/icocklin.jpeg'
+import avatarImage2 from '@/images/avatars/jclifford.jpeg'
+import avatarImage3 from '@/images/avatars/jgiddens.jpeg'
+import avatarImage4 from '@/images/avatars/rdorsi.jpeg'
+import avatarImage5 from '@/images/avatars/clawrence.jpeg'
+import avatarImage6 from '@/images/avatars/gpinner.jpeg'
 
 const testimonials = [
   [
     {
       content:
-        "Joe Crocker's advice is straight magic. If you're looking to leave the job, follow him 🏹",
+        "Joe, looking to leave......the best tenner I've spent today!👍🏻 Seriously thanks for compiling such a comprehensive guide. First thing I've done since reading it was to head over to the college of Policing site and lift the role profiles and CVFs into a spreadsheet 👍🏻 so I can compare roles I've had against advertised vacancies",
       author: {
-        name: 'Joe Giddens',
-        role: 'Founder of Kiehn and Sons',
+        name: 'Carl Lawrence',
+        role: 'Detective Constable, Suffolk',
         image: avatarImage5,
       },
     },
@@ -22,8 +23,8 @@ const testimonials = [
       content:
         'Joe has assisted with translating a career of experience and skills into a CV that translates the public sector private sector language difference. In doing so, Joe’s guidance has demystified the systems, processes, terminology and cultures involved and how my experience should be articulated to transcend such. It has been a painless and developmental experience, made so by the depth and breadth of Joe’s knowledge and emotionally intelligence approach to engagement. Joe’s ability to be succinct, straight talking and frank has been especially refreshing.',
       author: {
-        name: 'Steve',
-        role: 'Director at Velocity Industries',
+        name: "Rafaele D'Orsi",
+        role: 'Borough Commander, The Met',
         image: avatarImage4,
       },
     },
@@ -34,18 +35,17 @@ const testimonials = [
         'Massive thanks to Joe Crocker for his help and support in working with me on the development of my CV. If you are looking to transition from Policing to the Private sector and you have not seen his page, then you are missing a trick. His daily updates are invaluable and you really should visit his page. Thanks again Joe.',
       author: {
         name: 'Ian Cocklin',
-        role: 'CEO at Lynch LLC',
+        role: 'Police Constbale, Devon and Cornwall',
         image: avatarImage1,
       },
     },
-
     {
       content:
-        'Another day and more great advice from Joe Crocker. Joe has kindly collated lots of fantastic advice onto his feed that I know works. Take confidence from Joe’s advice because it’s true.',
+        "I reached out to Joe through LinkedIn after I found myself confused, scared and generally clueless at were to start with leaving the police. Joe was amazing in his quick response to messages and arranging a zoom chat. I went into the zoom chat not really knowing what Joe could do for me, but left feeling proud of what I've achieved, excited for what I can bring to a new role and inspired to apply to jobs I had previously been too scared to apply to.",
       author: {
-        name: 'John Clifford',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
+        name: 'Jason Stanley',
+        role: 'Police Sergeant, Sussex',
+        image: avatarImage3,
       },
     },
   ],
@@ -53,20 +53,20 @@ const testimonials = [
   [
     {
       content:
-        'Joe has taken time, to review my CV and do a report. This is all his own time and did not know who I was Friday. I think this is above and beyond. Get in touch with Joe if you need advice. Highly recommend. Thanks Joe',
+        "If anyone is looking at leaving policing or thinking of dipping their toe into the 'real world' I would highly recommend speaking to Joe Crocker. Joe has helped me create a CV and to really understand the transferable skills that officers have in policing. Having been an officer himself he understood what I was trying to explain and expand on in regards to incidents and projects. Who knew all the things we do daily without giving a second thought to are great attributes to a business and actually how skilled and developed officer's really are!? If you are looking at leaving or just want to refresh an existing CV then I couldn't recommend Joe more highly.",
       author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
-        image: avatarImage2,
+        name: 'Gary Pinner',
+        role: 'Detective Inspector, BTP',
+        image: avatarImage6,
       },
     },
     {
       content:
-        "I reached out to Joe through LinkedIn after I found myself confused, scared and generally clueless at were to start with leaving the police. Joe was amazing in his quick response to messages and arranging a zoom chat. I went into the zoom chat not really knowing what Joe could do for me, but left feeling proud of what I've achieved, excited for what I can bring to a new role and inspired to apply to jobs I had previously been too scared to apply to.",
+        'Another day and more great advice from Joe Crocker. Joe has kindly collated lots of fantastic advice onto his feed that I know works. Take confidence from Joe’s advice because it’s true.',
       author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
-        image: avatarImage3,
+        name: 'John Clifford',
+        role: 'Detective Sergeant, Durham',
+        image: avatarImage2,
       },
     },
   ],
@@ -90,12 +90,11 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Nice things people have said...
+            Kind words from people we&apos;ve helped
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
+            The ex-police family is one of the most powerful support networks
+            anywhere on the planet, and we&apos;re just a small part of it.
           </p>
         </div>
         <ul

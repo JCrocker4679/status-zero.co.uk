@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import { QuestionIcon } from '@/components/QuestionIcon'
 import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/CourseContainer'
 
@@ -12,40 +13,54 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-slate-700">
         <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          “The ex-police officer&apos;s handbook” is an online course that helps
-          you create a CV and authentic professional brand that will open up
-          exciting new opportunities and give you the confidence to take on new
-          challenges.
+          Are you a police officer considering your options?
         </p>
         <p className="mt-4">
-          Ok so it&apos;s not really a handbook at all, but there are guides for
-          everything in policing and we think this one would be more important
-          than all the others you&apos;ve got gathering dust in the back of your
-          locker.
+          If you&apos;re anything like me, I felt my value was only in my:{' '}
+          <ul className="my-4">
+            <li> • Current rank</li>
+            <li> • Years of Service </li>
+            <li> • Completed training courses </li>
+          </ul>
+          Which is understandable, because that&apos;s how they decide how much
+          you get paid.
         </p>
         <p className="mt-4">
-          But it turns out reading guidebooks and checklists will only get you
-          so far...
+          I did 9 years, Response, Neighborhoods, CID, and ended up as a
+          Cybercrime investigation specialist. Top of the pay scale, I
+          didn&apos;t want to leave those skills behind for a
+          &apos;promotion&apos; to custody, main office or traffic, but I needed
+          to make more money. So in 2018, I quit and went to work for a tech
+          start-up.
         </p>
-        <p className="mt-4">Our</p>
+        <p className="mt-4">
+          In 4 years, I&apos;ve doubled my salary and 10x&apos;d my quality of
+          life - This is the guide I wish I&apos;d had back then.
+        </p>
+        <p className="mt-4 font-bold text-slate-900">
+          I get asked the same questions every single day:
+        </p>
         <ul role="list" className="mt-8 space-y-3">
           {[
-            'Using boolean operations to combine basic shapes into complex icons',
-            'How to adapt icons to different sizes',
-            'Translating icons from an outline style to a solid style',
-            'Identifying the characteristics that make an icon set cohesive',
-            'Figma features and keyboard shortcuts to speed up your workflow',
+            "I want to leave but I don't know where to start",
+            'What jobs can I even do',
+            'But I cant afford to take a paycut to re-train',
+            "How do I write a CV - I've not done one since school ",
+            "But I'm only a response cop, I don't have any transferrable skills",
+            'Why am I not being invited to job interviews?',
           ].map((feature) => (
             <li key={feature} className="flex">
-              <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
+              <QuestionIcon className="h-8 w-8 flex-none fill-blue-700" />
               <span className="ml-4">{feature}</span>
             </li>
           ))}
         </ul>
         <p className="mt-8">
-          By the end of the course, you’ll have all the confidence you need to
-          dig in and start creating beautiful icons that can hold their own
-          against any of the sets you can find online.
+          This course was created by ex-cops who know how to answer those
+          questions. With a combined 20 years diverse policing experience, and
+          10 years outside the job in tech start-ups, coaching, recruitment and
+          change management, we knnow the resources and guidance you need to
+          start your next chapter.
         </p>
         <p className="mt-10">
           <Link

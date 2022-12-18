@@ -24,12 +24,14 @@ export function CallToAction() {
             Get started today
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            It’s time to take control of your books. Buy our software so you can
-            feel like you’re doing something productive.
+            It’s time to unlock your potential. Join other officers looking to
+            leave and begin the new start you&apos;ve been waiting for
           </p>
-          <Button href="/register" color="white" className="mt-10">
-            Get 6 months free
-          </Button>
+          <div className="flex justify-center gap-x-6">
+            <Button href="/register" color="white" className="mt-10">
+              Join the transition course
+            </Button>
+          </div>
         </div>
       </Container>
     </section>
