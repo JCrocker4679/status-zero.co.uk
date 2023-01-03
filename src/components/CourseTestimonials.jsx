@@ -3,6 +3,10 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/CourseContainer'
 import { Expandable } from '@/components/Expandable'
+import hampshire from '@/images/avatars/hampshire.png'
+import surrey from '@/images/avatars/surreypolice.png'
+import avonandsomerset from '@/images/avatars/avonandsomerset.png'
+import leicestershire from '@/images/avatars/leicestershire.png'
 import avatarImage3 from '@/images/avatars/avatar-3.png'
 import avatarImage4 from '@/images/avatars/avatar-4.png'
 import avatarImage5 from '@/images/avatars/avatar-5.png'
@@ -17,87 +21,87 @@ const testimonials = [
   [
     {
       content:
-        'Mira’s teaching style is second to none. Everything was easy to follow every step of the way.',
+        'The course has given me some additional confidence that I am in teh right place in terms of what I am seeking to achieve',
       author: {
-        name: 'Antonio Littel',
-        role: 'Frontend Developer',
-        image: avatarImage3,
+        name: 'Hampshire Police',
+        role: 'March 2021',
+        image: hampshire,
       },
     },
     {
       content:
-        'Even though I was excited to learn, I was pessimistic that I wouldn’t actually ever get good enough to design my own icons. I was wrong — this book is all I needed.',
+        'It was all very professional. I very much felt that the presenters definitely knew their stuff. Very useful and inspiring.',
       author: {
-        name: 'Lynn Nolan',
-        role: 'Growth Marketer',
-        image: avatarImage4,
+        name: 'Surrey Police',
+        role: 'July 2021',
+        image: surrey,
       },
     },
     {
       content:
-        'I’ve been employed as a professional icon designer for years and still learned tons of new tricks that have made my work even better',
+        "It helped me understand how to translate my police experience into business value and now I'm much more confident applying for jobs",
       author: {
-        name: 'Krista Prosacco',
-        role: 'Professional Designer',
-        image: avatarImage9,
-      },
-    },
-  ],
-  [
-    {
-      content:
-        'I run an ecommerce store selling rare vintage gummy bears and could never find a good gummy bear icon. Now I can design my own in minutes.',
-      author: {
-        name: 'Cameron Considine',
-        role: 'Entrepreneur',
-        image: avatarImage7,
-      },
-    },
-    {
-      content:
-        'The complete package is worth it for the weekly teardown videos alone. I’ve learned so much watching Mira take apart other icons and recreate them from scratch.',
-      author: {
-        name: 'Regina Wisoky',
-        role: 'Design Student',
-        image: avatarImage11,
-      },
-    },
-    {
-      content:
-        'I didn’t expect to find a lot of value in the community but now I’m in there for at least an hour every day picking up tips from other designers.',
-      author: {
-        name: 'Vernon Cummerata',
-        role: 'UI Engineer',
-        image: avatarImage8,
+        name: 'Avon and Somerset Police',
+        role: 'May 2019',
+        image: avonandsomerset,
       },
     },
   ],
   [
     {
       content:
-        'I couldn’t believe how fast Mira moved in Figma compared to my own workflow. I’m designing icons more accurately in half the time with the shortcuts I learned from her videos.',
+        'I have acquired a surprising amount of detail in relation to CVs, interviews and interview technique. I feel much more equipped going forward',
       author: {
-        name: 'Steven Hackett',
-        role: 'Bootcamp Instructor',
-        image: avatarImage5,
+        name: 'Surrey Police',
+        role: 'July 2021',
+        image: surrey,
       },
     },
     {
       content:
-        'I never thought I would enjoy designing icons but using the ideas in this book, it’s become a great way for me to relax while still being creative.',
+        "We're all more skilled than we realise and those skills are transferable - i'm not 'just' a cop!",
       author: {
-        name: 'Carla Schoen',
-        role: 'Startup Founder',
-        image: avatarImage10,
+        name: 'Leicestershire Police',
+        role: 'September 2021',
+        image: leicestershire,
       },
     },
     {
       content:
-        'All I can say is wow — this is easily the best icon design resource I’ve ever encountered.',
+        "The course and inputs has really made me feel more open to the next phase of my working life - not seeing it as retirement made a huge difference. I'm looking forward to the end date.",
       author: {
-        name: 'Leah Kiehn',
-        role: 'Creative Director',
-        image: avatarImage6,
+        name: 'Hampshire Police',
+        role: 'March 2021',
+        image: hampshire,
+      },
+    },
+  ],
+  [
+    {
+      content:
+        "I felt a bit lost wasn't really sure where to start as it had been 25 years since I last applied for a job - I am much more positive and with more self belief.",
+      author: {
+        name: 'Hampshire Police',
+        role: 'March 2021',
+        image: hampshire,
+      },
+    },
+    {
+      content:
+        'Whilst I had an understanding of CV writing I have learned far more than I expected about content, layout and how to tailor htem to specific job roles.',
+      author: {
+        name: 'Surrey Police',
+        role: 'July 2021',
+        image: surrey,
+      },
+    },
+    {
+      content:
+        'Excellent, clear, professional - great mix of getting involved and presentations. Time went quick which is a good sign!',
+      author: {
+        name: 'Leicestershire Police',
+        role: 'September 2021',
+        image: leicestershire,
       },
     },
   ],
@@ -114,7 +118,7 @@ function Testimonial({ author, children }) {
       <figcaption className="mt-6 flex items-center">
         <div className="overflow-hidden rounded-full bg-slate-50">
           <Image
-            className="h-12 w-12 object-cover"
+            className="h-12 w-12 object-contain"
             src={author.image}
             alt=""
             width={48}
@@ -134,15 +138,15 @@ function Testimonial({ author, children }) {
 
 export function Testimonials() {
   return (
-    <section className="py-8 sm:py-10 lg:py-16">
+    <section className=" py-8 sm:py-10 lg:py-16">
       <Container className="text-center">
         <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          Some kind words from early customers...
+          Some kind words from other cops...
         </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-600">
-          I worked with a small group of early access customers to make sure all
-          of the content in the book was exactly what they needed. Hears what
-          they had to say about the finished product.
+          It might be the first time we&apos;ve taken the course online, but
+          we&apos;ve been teaching police officers these tricks for years.
+          Here&apos;s what some of them had to say.
         </p>
       </Container>
       <Expandable>

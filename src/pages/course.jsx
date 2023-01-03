@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import { Author1 } from '@/components/Author1'
 import { Author } from '@/components/Author'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -17,6 +18,7 @@ import { Faqs } from '@/components/Faqs'
 import avatarImage1 from '@/images/avatars/surreypolice.png'
 import avatarImage2 from '@/images/avatars/hampshire.png'
 import { NewsletterSignup } from '@/components/NewsletterSignup'
+import ContactUs from '@/components/ContactUs'
 
 export default function Home() {
   return (
@@ -67,9 +69,12 @@ export default function Home() {
       <Pricing />
 
       <Testimonials />
+      <Author />
+      <Author1 />
 
       <Faqs />
-      <Author />
+      <ContactUs />
+
       <Footer />
     </>
   )

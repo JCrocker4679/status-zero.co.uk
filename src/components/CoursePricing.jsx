@@ -3,7 +3,6 @@ import clsx from 'clsx'
 import { Button } from '@/components/CourseButton'
 import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/CourseContainer'
-import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
 
 function Plan({ name, description, price, features, href, featured }) {
@@ -11,7 +10,7 @@ function Plan({ name, description, price, features, href, featured }) {
     <div
       className={clsx(
         'relative px-4 py-16 sm:rounded-5xl sm:px-10 md:py-12 lg:px-12',
-        featured && 'bg-slate-900 sm:shadow-lg'
+        featured && 'bg-blue-700 sm:shadow-lg'
       )}
     >
       {featured && (
@@ -38,10 +37,10 @@ function Plan({ name, description, price, features, href, featured }) {
           <span
             className={clsx(
               'text-[1.75rem] leading-tight',
-              featured ? 'text-blue-200' : 'text-slate-500'
+              featured ? 'text-blue-50' : 'text-slate-500'
             )}
           >
-            $
+            £
           </span>
           <span
             className={clsx(
@@ -77,11 +76,11 @@ function Plan({ name, description, price, features, href, featured }) {
         </div>
         <Button
           href={href}
-          color={featured ? 'white' : 'slate'}
+          color={featured ? 'white' : 'blue'}
           className="mt-8"
           aria-label={`Get started with the ${name} plan for $${price}`}
         >
-          Get started
+          {featured ? 'Contact us' : 'Get Started'}
         </Button>
       </div>
     </div>
@@ -100,38 +99,39 @@ export function Pricing() {
           Pricing
         </SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-          Pick your package
+          Simple & Affordable
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          “Everything Starts as a Square” is available in two different packages
-          so you can pick the one that’s right for you.
+          Anyone can take this course online over 30 days, but we also work with
+          Police Federations across the UK to deliver training in person.
         </p>
       </Container>
       <div className="mx-auto mt-16 max-w-5xl lg:px-6">
         <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
           <Plan
-            name="Essential"
-            description="The perfect starting point if you’re on a budget."
-            price={15}
+            name="Individuals"
+            description="The best way to take control of your career move."
+            price={199}
             href="#"
             features={[
-              'The 240-page ebook',
-              'Figma icon templates',
+              '30-day online course',
+              '60 minute live session per week',
+              '25 practical exercises',
               'Community access',
             ]}
           />
           <Plan
             featured
-            name="Complete"
-            description="Everything icon resource you could ever ask for."
-            price={229}
-            href="#"
+            name="Federations"
+            description="The full course, condensed into a 2 day session."
+            price={3000}
+            href="#contact"
             features={[
-              'The 240-page ebook',
-              'Figma icon templates',
-              'Over an hour of screencasts',
-              'Weekly icon teardowns',
+              'In-Person Delivery',
+              'CPD accredited',
+              'Practical interactive sessions',
               'Community access',
+              'Follow-up support',
             ]}
           />
         </div>

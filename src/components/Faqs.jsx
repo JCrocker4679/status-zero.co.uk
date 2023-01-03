@@ -6,53 +6,53 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'Will you find me a job?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        "No - we'll give you the tools, skills and confidence to figure out the next step in your career and go get it, but we're not recruiters and we don't work with any recruitment agencies.",
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: "Why isn't this free?",
+      answer:
+        'Unlike with the military, there are no formal government backed resettlement schemes that would include this type of training. We provide this training independently because we know just how hard it is to get any support for leaving. We want to keep the cost accessible whilst charging enough to keep you accountable.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'How much does it cost?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        "You can find career coaches charging £1000's for tips, tricks and hacks who know nothing about policing. We believe cops just need clear instructions and the tools and confidence to get started. The course gives you that for £199. ",
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'Can this really work for me?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        "Honestly, it's not rocket science. The problem wont be a lack of skills or experience, it will be a lack of clarity around what your next career move should be and a lack of knowledge around best practices. We can help with both.",
     },
     {
-      question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+      question: 'Do I have to attend the live sessions?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        'No - everything is available as a recording for you to watch whenver suits you. We encourage you to add comments and posts ',
     },
     {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+      question: 'How does the community element work?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        "The course is provided through an online application called circle.so. It's not 'social media' so everything is kept private - the only people who can see it are people who've paid to be on the course. All your videos, materials and classmates will be provided through circle, and we encourage comments and feedback on exercises throughout the course within the platform.",
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'What if I want a refund?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        "If you don't think the course was worth the money, for whatever reason, we'll refund your purchase. All we ask if that you engage with the course materials and live sessions for 14 days. If after enrolling you find that your schedule is busier than you though, we'll roll you forward into a future cohort at zero additional cost. ",
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: 'How long do I have access to the course materials?',
+      answer:
+        "You get everything - forever. All course materials will be available to you in circle and to download. You'll be able to stay in touch for as long as you need, and we hope eventually you'll share your story back with us.",
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question: "What if i'm not very tech savvy?",
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        "Don't worry, you're not alone. If you're familiar with tools like Zoom, Teams or LinkedIn, you'll be right at home in Circle and we spend the first part of the course making sure everyone in the class is comfortable with the tech.",
     },
   ],
 ]
@@ -77,13 +77,13 @@ export function Faqs() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="faq-title"
-            className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
+            className="font-display text-4xl font-bold tracking-tight text-slate-900"
           >
             Frequently asked questions
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+          <p className="text-slate-60 mt-4 text-lg tracking-tight">
+            Most people have the same questions and worries, so here is what we
+            get asked most often.
           </p>
         </div>
         <ul
