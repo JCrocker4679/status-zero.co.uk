@@ -28,7 +28,7 @@ export function CallToAction() {
             leave and begin the new start you&apos;ve been waiting for
           </p>
           <div className="flex justify-center gap-x-6">
-            <Button href="/register" color="white" className="mt-10">
+            <Button href="/course" color="white" className="mt-10">
               Join the transition course
             </Button>
           </div>

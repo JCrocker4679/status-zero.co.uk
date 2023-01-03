@@ -163,7 +163,6 @@ export default function ContactUs() {
                     }}
                     rows={6}
                     className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                    defaultValue={''}
                   />
                   {errors?.message && (
                     <p className="text-red-500">

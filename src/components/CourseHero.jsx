@@ -66,7 +66,10 @@ export function CourseHero() {
               professionals succesfully transition into a new career.
             </p>
             <div className="mt-8 flex gap-4">
-              <Button href="#pricing" color="blue">
+              <Button
+                href="https://buy.stripe.com/5kA2bY3mFbRD2g8fYY"
+                color="blue"
+              >
                 Sign up for the course
               </Button>
             </div>

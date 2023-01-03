@@ -112,7 +112,7 @@ export function Pricing() {
             name="Individuals"
             description="The best way to take control of your career move."
             price={199}
-            href="#"
+            href="https://buy.stripe.com/5kA2bY3mFbRD2g8fYY"
             features={[
               '30-day online course',
               '60 minute live session per week',

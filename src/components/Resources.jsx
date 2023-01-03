@@ -24,9 +24,9 @@ const resources = [
     },
   },
   {
-    title: 'Completely Flexible',
+    title: 'Practical Exercises',
     description:
-      'Follow along live or catch-up later, all videos and resources are available to download after',
+      'Build yourself a CV and LinkedIn profile that gets you interviews for the jobs you want',
     image: function FigmaImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center  bg-slate-100">

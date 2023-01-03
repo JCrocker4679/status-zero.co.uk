@@ -17,11 +17,13 @@ export function Introduction() {
         </p>
         <p className="mt-4">
           If you&apos;re anything like me, I felt my value was only in my:{' '}
-          <ul className="my-4">
-            <li> • Current rank</li>
-            <li> • Years of Service </li>
-            <li> • Completed training courses </li>
-          </ul>
+        </p>
+        <ul className="my-4">
+          <li> • Current rank</li>
+          <li> • Years of Service </li>
+          <li> • Completed training courses </li>
+        </ul>
+        <p>
           Which is understandable, because that&apos;s how they decide how much
           you get paid.
         </p>
@@ -64,10 +66,10 @@ export function Introduction() {
         </p>
         <p className="mt-10">
           <Link
-            href="#free-chapters"
+            href="#interested"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
           >
-            Get a free chapter straight to your inbox{' '}
+            Interested? Let us keep you updated
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>

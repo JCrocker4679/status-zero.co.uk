@@ -17,8 +17,8 @@ export function Footer() {
             <nav className="pt-3 text-sm" aria-label="quick links">
               <div className="-my-1 flex justify-center gap-x-6 ">
                 <NavLink href="/course">Course</NavLink>
-                <NavLink href="/services">Services</NavLink>
-                <NavLink href="/about">About</NavLink>
+                {/* <NavLink href="/services">Services</NavLink>
+                <NavLink href="/about">About</NavLink> */}
               </div>
             </nav>
           </div>
@@ -26,7 +26,7 @@ export function Footer() {
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             <Link
-              href="https://linked.com"
+              href="https://linkedin.com"
               className="group"
               aria-label="Status Zero on LinkedIn"
             >

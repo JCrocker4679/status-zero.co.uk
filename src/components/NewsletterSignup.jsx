@@ -52,8 +52,8 @@ export function NewsletterSignup() {
 
   return (
     <section
-      id="get-started-today"
-      className="relative overflow-hidden bg-blue-600 py-32"
+      id="interested"
+      className="relative scroll-mt-14 overflow-hidden scroll-smooth bg-blue-600 py-32"
     >
       <Image
         className="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
@@ -65,21 +65,22 @@ export function NewsletterSignup() {
       />
       <div className="overflow-hidden lg:relative">
         <Container
-          size="md"
+          size="lg"
           className="py-18 relative grid grid-cols-1 items-end gap-y-12 lg:static lg:grid-cols-2 lg:py-10 xl:py-10"
         >
           <div>
-            <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
+            <h2 className="font-display text-5xl tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
               Register your interest
             </h2>
             <p className="mt-4 text-lg tracking-tight text-blue-100">
-              Enter your email address and we&apos;ll send you a sample from two
-              of our most popular lessons in the course.
+              Get periodic emails about course developments, feedback, success
+              stories, and new course dates, so you can sign up when you&apos;re
+              ready.
             </p>
           </div>
           <form className="lg:pl-16" onSubmit={handleSubmit(onSubmit)}>
             <h3 className="text-base font-medium tracking-tight text-white">
-              Get the highlights straight to your inbox
+              No spam, unsubscribe at any time.
               <span aria-hidden="true">&rarr;</span>
             </h3>
 
@@ -94,7 +95,7 @@ export function NewsletterSignup() {
                   aria-label="Email address"
                   placeholder="Email address"
                   className={inputClass}
-                  diabled={isLoading}
+                  disabled={isLoading}
                 />
                 <div className={formClass} />
               </div>
@@ -104,7 +105,7 @@ export function NewsletterSignup() {
                 className={btnClass}
                 disabled={isLoading}
               >
-                {isLoading ? 'Processing' : 'Sign up'}
+                {isLoading ? 'Processing' : "I'm interested"}
               </Button>
             </div>
             {isError && <ErrorMessage message={error} />}
