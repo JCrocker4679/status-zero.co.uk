@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/CourseContainer'
-import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
 import backgroundImage from '@/images/background-faqs.jpg'
 

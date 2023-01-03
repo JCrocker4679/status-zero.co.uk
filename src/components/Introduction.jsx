@@ -59,7 +59,7 @@ export function Introduction() {
           This course was created by ex-cops who know how to answer those
           questions. With a combined 20 years diverse policing experience, and
           10 years outside the job in tech start-ups, coaching, recruitment and
-          change management, we knnow the resources and guidance you need to
+          change management, we know the resources and guidance you need to
           start your next chapter.
         </p>
         <p className="mt-10">
@@ -67,7 +67,7 @@ export function Introduction() {
             href="#free-chapters"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
           >
-            Get two free chapters straight to your inbox{' '}
+            Get a free chapter straight to your inbox{' '}
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>

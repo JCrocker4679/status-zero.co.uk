@@ -11,7 +11,7 @@ import interview from '@/images/photos/interview.jpeg'
 
 const features = [
   {
-    title: 'Online Course',
+    title: 'Resettlement Course',
     description:
       'The step-by-step guide to making a successful transition from policing to your next chapter.',
     image: leap,

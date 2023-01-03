@@ -41,17 +41,26 @@ export function Author1() {
               there, I’m the ex-cop behind Status Zero.
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              I left policing after 9 years. With 2 kids, a mortgage and some
-              challenging personal circumstances, I felt more broke than I did
-              as a student. I didn&apos;t want to leave those skills behind for
-              a &apos;promotion&apos; to custody, main office or traffic, but I
-              needed to make more money.
+              5 years ago, I left policing for a tech startup.{' '}
             </p>
+
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              I left policing for a start-up 4 years ago. Doubled my salary.
-              10x&apos;d my quality of life. I&apos;ve worked as a hiring
-              manager for 2 tech start-ups for over 10 different roles and
-              reviewed 100s of CVs.{' '}
+              After 9 years service, with 2 kids, a mortgage and some
+              challenging personal circumstances, I felt more broke and lost
+              than I did as a Uni student. I had developed skills and expertise
+              I didn&apos;t feel were recognised by the job, and I didn&apos;t
+              want to leave those skills behind for a &apos;promotion&apos; to
+              custody, main office or traffic. I left because I needed to make
+              more money.
+            </p>
+
+            <p className="mt-4 text-lg tracking-tight text-slate-700">
+              {' '}
+              In less than 2 years I doubled my salary and 10x&apos;d my quality
+              of life. I&apos;ve since worked as a hiring manager for 2 tech
+              start-ups for over 15 different roles, reviewed 100s of CVs,
+              conducted a bunch of interviews and I&apos;ve been helping cops
+              write their CVs for over 18 months.{' '}
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
               Now, I write on LinkedIn every day to thousands of unsettled

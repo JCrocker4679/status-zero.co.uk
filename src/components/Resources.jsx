@@ -3,54 +3,58 @@ import Image from 'next/image'
 import { Container } from '@/components/CourseContainer'
 import { SectionHeading } from '@/components/SectionHeading'
 import abstractBackgroundImage from '@/images/resources/abstract-background.png'
-import discordImage from '@/images/resources/discord.svg'
+import circleImage from '@/images/resources/Circle_Logo.png'
 import figmaImage from '@/images/resources/figma.svg'
 import videoPlayerImage from '@/images/resources/video-player.svg'
+import exercisesImage from '@/images/resources/exercises.svg'
+import downloadImage from '@/images/resources/download.svg'
+import communityImage from '@/images/resources/community2.svg'
 
 const resources = [
   {
-    title: 'Figma icon templates',
+    title: 'Private community of cops',
     description:
-      'Pefectly structured templates for quickly designing new icons at dozens of common sizes.',
-    image: function FigmaImage() {
+      'A safe online space of like-minded cops where you can get help and collaborate.',
+    image: function CircleImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
-          <Image src={figmaImage} alt="" unoptimized />
+        <div className="absolute inset-0 flex items-center justify-center bg-slate-100 ">
+          <Image src={communityImage} alt="" unoptimized height={145} />
         </div>
       )
     },
   },
   {
-    title: 'Weekly icon teardowns',
+    title: 'Completely Flexible',
     description:
-      'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
+      'Follow along live or catch-up later, all videos and resources are available to download after',
+    image: function FigmaImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center  bg-slate-100">
+          <Image src={exercisesImage} alt="" height={150} unoptimized />
+        </div>
+      )
+    },
+  },
+  {
+    title: 'Completely Flexible',
+    description:
+      'Follow along live or catch-up later, all videos and resources are available to download after.',
     image: function VideoPlayerImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <Image
+        <div className="] absolute inset-0 flex items-center  justify-center bg-slate-100">
+          {/* <Image
             className="absolute inset-0 h-full w-full object-cover"
             src={abstractBackgroundImage}
             alt=""
             sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
-          />
+          /> */}
           <Image
             className="relative"
-            src={videoPlayerImage}
+            src={downloadImage}
             alt=""
+            height={200}
             unoptimized
           />
-        </div>
-      )
-    },
-  },
-  {
-    title: 'Community of icon designers',
-    description:
-      "A private Discord server where you can get help and give feedback on each others' work.",
-    image: function DiscordImage() {
-      return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <Image src={discordImage} alt="" unoptimized />
         </div>
       )
     },
@@ -66,16 +70,15 @@ export function Resources() {
     >
       <Container>
         <SectionHeading number="3" id="resources-title">
-          Resources
+          Online Delivery
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Tools and resources you can use to get started even faster and
-          progress even further.
+          A cutting-edge approach to courses and job searching
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Design assets, icon teardowns, and a community of fellow icon
-          designers where you can ask questions, get feedback, and accelerate
-          your learning.
+          Becoming part of a &quot;Job Search Council&quot; is the best kept
+          secret in Silicon Valley, and by studying as a group you increase your
+          chances of success to over 85%.
         </p>
       </Container>
       <Container size="lg" className="mt-16">

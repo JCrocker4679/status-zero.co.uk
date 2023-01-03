@@ -3,28 +3,33 @@ import { Expandable } from '@/components/Expandable'
 import { SectionHeading } from '@/components/SectionHeading'
 
 const tableOfContents = {
-  'Getting started': {
-    'Getting started': 1,
-    'Intro to Figma': 15,
-    'Setting up your first artboard': 20,
+  'Week 1: Who are you - really?': {
+    'Introduce yourself': 'Day 1',
+    'Wheel of life': 'Day 2',
+    'Understand your personality': 'Day 3',
+    'Recognise your strengths': 'Day 4',
+    'Define your values': 'Day 5',
   },
-  Fundamentals: {
-    'Strokes and fills': 21,
-    'End points': 22,
-    'Bezier curves': 26,
-    'Designing on a grid': 31,
-    'Vector shapes': 45,
+  'Week 2: Skills Week': {
+    'Managing perceptions of public servants': 'Day 8',
+    'Tackling self-limiting beliefs': 'Day 9',
+    'Explaining transferrable skills': 'Day 10',
+    'Finding jobs you could do': 'Day 11',
+    'Ikigai - your sense of purpose': 'Day 12',
   },
-  'Boolean operations': {
-    'Combining shapes': 50,
-    'Subtracting shapes': 57,
-    'Intersecting shapes': 66,
-    Flattening: 78,
+  'Week 3: CVs and Job Applications': {
+    'Automating your job search': 'Day 15',
+    'Defining a good CV': 'Day 16',
+    'The cutting room floor - what to include': 'Day 17',
+    '5 rules for CV formatting': 'Day 18',
+    'Cover letters and processing feedback': 'Day 19',
   },
-  'Optimizing for production': {
-    'Preparing for SVG': 82,
-    'Configuring your export settings': 88,
-    'Minifying and removing metadata': 95,
+  'Week 4: Building your brand': {
+    'Unlearning Social Media': 'Day 22',
+    'Effective LinkedIn Profiles': 'Day 23',
+    'Identify your Audience': 'Day 24',
+    'Backstory - why leaving matters': ' Day 25',
+    'Meet the new you': 'Day 26',
   },
 }
 
@@ -40,13 +45,15 @@ export function TableOfContents() {
           Table of contents
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Get a look at all of the content covered in the book. Everything you
-          need to know is inside.
+          Take a look at all of the content covered in the course. Everything
+          you need to know is covered.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          “Everything Starts as a Square” is comprised of 240 tightly edited,
-          highly visual pages designed to teach you everything you need to know
-          about icon design with no unnecessary filler.
+          OK... so “The Ex-Police Officers handbook” isn&apos;t an actual book,
+          but it is a carefully structured, CPD accredited curriculum based on
+          cutting-edge job search techniques and a holistic approach to health,
+          wealth and happiness. We walk the path with you, every step of the
+          way, with no unecessary filler.
         </p>
         <Expandable>
           {({ isExpanded }) => (
@@ -63,11 +70,11 @@ export function TableOfContents() {
                         role="list"
                         className="mt-8 divide-y divide-slate-300/30 rounded-2xl bg-slate-50 py-3 px-6 text-base tracking-tight sm:py-7 sm:px-8"
                       >
-                        {Object.entries(pages).map(([title, pageNumber]) => (
+                        {Object.entries(pages).map(([title, day]) => (
                           <li
                             key={title}
                             className="flex justify-between py-3"
-                            aria-label={`${title} on page ${pageNumber}`}
+                            aria-label={`${title} on page ${day}`}
                           >
                             <span
                               className="font-medium text-slate-900"
@@ -79,7 +86,7 @@ export function TableOfContents() {
                               className="font-mono text-slate-400"
                               aria-hidden="true"
                             >
-                              {pageNumber}
+                              {day}
                             </span>
                           </li>
                         ))}

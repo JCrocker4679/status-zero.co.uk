@@ -14,8 +14,9 @@ import { TableOfContents } from '@/components/TableOfContents'
 import { Testimonial } from '@/components/CourseTestimonial'
 import { Testimonials } from '@/components/CourseTestimonials'
 import { Faqs } from '@/components/Faqs'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
+import avatarImage1 from '@/images/avatars/surreypolice.png'
+import avatarImage2 from '@/images/avatars/hampshire.png'
+import { NewsletterSignup } from '@/components/NewsletterSignup'
 
 export default function Home() {
   return (
@@ -35,34 +36,38 @@ export default function Home() {
       <Testimonial
         id="testimonial-from-tommy-stroman"
         author={{
-          name: 'Tommy Stroman',
-          role: 'Front-end developer',
+          name: 'Surrey Police',
+          role: 'July 2021',
           image: avatarImage1,
         }}
       >
         <p>
-          “I didn’t know a thing about icon design until I read this book. Now I
-          can create any icon I need in no time. Great resource!”
+          “The Course left me feeling much more positive about my future options
+          and my potential value in the jobs marketplace.”
         </p>
       </Testimonial>
       <Screencasts />
       <Testimonial
-        id="testimonial-from-gerardo-stark"
+        id="testimonial-from-hampshire-police"
         author={{
-          name: 'Gerardo Stark',
-          role: 'Creator of Pandemicons',
+          name: 'Hampshire Police',
+          role: 'March 2021',
           image: avatarImage2,
         }}
       >
         <p>
-          “I’ve tried to create my own icons in the past but quickly got
-          frustrated and gave up. Now I sell my own custom icon sets online.”
+          “some really useful tips and particularly around Linkedin. I suspect
+          many of us are suspicious or certainly very wary of social media to to
+          be walked and talked through it was very helpful.”
         </p>
       </Testimonial>
       <Resources />
-      <FreeChapters />
+      <NewsletterSignup />
+
       <Pricing />
+
       <Testimonials />
+
       <Faqs />
       <Author />
       <Footer />

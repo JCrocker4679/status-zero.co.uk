@@ -11,13 +11,11 @@ function Plan({ name, description, price, features, href, featured }) {
     <div
       className={clsx(
         'relative px-4 py-16 sm:rounded-5xl sm:px-10 md:py-12 lg:px-12',
-        featured && 'bg-blue-600 sm:shadow-lg'
+        featured && 'bg-slate-900 sm:shadow-lg'
       )}
     >
       {featured && (
-        <div className="absolute inset-0 text-white/10 [mask-image:linear-gradient(white,transparent)]">
-          <GridPattern x="50%" y="50%" />
-        </div>
+        <div className="absolute inset-0 text-white/10 [mask-image:linear-gradient(white,transparent)]"></div>
       )}
       <div className="relative flex flex-col">
         <h3

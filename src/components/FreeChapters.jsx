@@ -1,7 +1,7 @@
 import { Button } from '@/components/CourseButton'
 import { Container } from '@/components/CourseContainer'
 import { Pattern } from '@/components/Pattern'
-
+import backgroundImage from '@/images/background-faqs.jpg'
 export function FreeChapters() {
   return (
     <section
