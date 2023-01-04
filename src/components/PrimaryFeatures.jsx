@@ -74,7 +74,7 @@ export function PrimaryFeatures() {
             Support for Police Officers, by ex-Police Officers
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Leaving the police can be overwhelming. We can help you maake the
+            Leaving the police can be overwhelming. We can help you make the
             most of your unique strengths and unlock your potential.
           </p>
         </div>
