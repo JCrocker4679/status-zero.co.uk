@@ -70,7 +70,7 @@ export function Author1() {
             </p>
             <p className="mt-8">
               <Link
-                href="#"
+                href="https://www.linkedin.com/in/joe-crocker/"
                 className="inline-flex items-center text-base font-medium tracking-tight text-blue-700"
               >
                 <LinkedinIcon className="h-10 w-10 fill-current" />
