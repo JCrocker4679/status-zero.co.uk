@@ -70,7 +70,7 @@ export function CourseHero() {
                 href="https://community.statuszero.co.uk/checkout/the-police-resettlement-course"
                 color="blue"
               >
-                Sign up for the course
+                Buy the course
               </Button>
             </div>
           </div>
