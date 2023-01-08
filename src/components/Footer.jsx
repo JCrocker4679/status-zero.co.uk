@@ -17,6 +17,9 @@ export function Footer() {
             <nav className="pt-3 text-sm" aria-label="quick links">
               <div className="-my-1 flex justify-center gap-x-6 ">
                 <NavLink href="/course">Course</NavLink>
+                <NavLink href="https://community.statuszero.co.uk">
+                  Community
+                </NavLink>
                 {/* <NavLink href="/services">Services</NavLink>
                 <NavLink href="/about">About</NavLink> */}
               </div>

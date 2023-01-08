@@ -26,7 +26,7 @@ export function Hero() {
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/course" color="blue">
-          Sign up for the course
+          Find out about the course
         </Button>
         {/* <Button variant="outline">
           <svg
