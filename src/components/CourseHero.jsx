@@ -59,15 +59,15 @@ export function CourseHero() {
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
-              Your step-by-step guide to a succesful career change.
+              Your step-by-step guide to a successful career change.
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
               A 30-day cohort-based course that helps law enforcement
-              professionals succesfully transition into a new career.
+              professionals successfully transition into a new career.
             </p>
             <div className="mt-8 flex gap-4">
               <Button
-                href="https://buy.stripe.com/5kA2bY3mFbRD2g8fYY"
+                href="https://community.statuszero.co.uk/checkout/the-police-resettlement-course"
                 color="blue"
               >
                 Sign up for the course

@@ -46,7 +46,7 @@ export function TableOfContents() {
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
           Take a look at all of the content covered in the course. Everything
-          you need to know is covered.
+          you need to know is included.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
           OK... so “The Ex-Police Officers handbook” isn&apos;t an actual book,
