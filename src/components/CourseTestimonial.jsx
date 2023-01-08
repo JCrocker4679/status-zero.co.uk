@@ -9,7 +9,7 @@ export function Testimonial({ id, author, children }) {
     <aside
       id={id}
       aria-label={`Testimonial from ${author.name}`}
-      className="relative overflow-clip bg-slate-50 py-16 sm:py-32"
+      className="relative overflow-hidden bg-slate-50 py-16 sm:py-32"
     >
       <Image
         className="absolute top-0 left-1/3 max-w-none translate-x-[-30%] -translate-y-1/4"
