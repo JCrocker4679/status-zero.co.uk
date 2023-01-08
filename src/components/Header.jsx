@@ -118,7 +118,7 @@ export function Header() {
               href="https://community.statuszero.co.uk/checkout/the-police-resettlement-course"
               color="blue"
             >
-              <span>Sign up for the course</span>
+              <span>Buy the course</span>
             </Button>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
