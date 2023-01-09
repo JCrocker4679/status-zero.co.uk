@@ -117,6 +117,7 @@ export function Header() {
             <Button
               href="https://community.statuszero.co.uk/checkout/the-police-resettlement-course"
               color="blue"
+              onClick="fathom.trackGoal('ECFHCBGP', 0);"
             >
               <span>Buy the course</span>
             </Button>
