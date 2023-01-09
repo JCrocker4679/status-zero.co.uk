@@ -79,6 +79,7 @@ function Plan({ name, description, price, features, href, featured }) {
           color={featured ? 'white' : 'blue'}
           className="mt-8"
           aria-label={`Get started with the ${name} plan for $${price}`}
+          onClick="fathom.trackGoal('TOVRYTDN', 0);"
         >
           {featured ? 'Contact us' : 'Get Started'}
         </Button>

@@ -104,6 +104,7 @@ export function NewsletterSignup() {
                 color="white"
                 className={btnClass}
                 disabled={isLoading}
+                onClick="fathom.trackGoal('XS4LRBTY', 0);"
               >
                 {isLoading ? 'Processing' : "I'm interested"}
               </Button>
