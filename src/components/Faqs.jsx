@@ -16,9 +16,9 @@ const faqs = [
         'Unlike with the military, there are no formal government backed resettlement schemes that would include this type of training. We provide this training independently because we know just how hard it is to get any support for leaving. We want to keep the cost accessible whilst charging enough to keep you accountable.',
     },
     {
-      question: 'How much does it cost?',
+      question: 'Do i have to log in every day for 30 days?',
       answer:
-        "You can find career coaches charging £1000's for tips, tricks and hacks who know nothing about policing. We believe cops just need clear instructions and the tools and confidence to get started. The course gives you that for £199. ",
+        "No. We will make all the materials for the week available on Sunday evenings. All the live sessions are optional, and a recording will be available immediately after. You'll be able to log in and comment and share with your classmates at any time. If you want to log in every day and do a little bit, great if you'd rather do one hit a week - that works fine too. ",
     },
   ],
   [
