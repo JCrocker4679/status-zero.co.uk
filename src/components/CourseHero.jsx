@@ -62,15 +62,16 @@ export function CourseHero() {
               Your step-by-step guide to a successful career change.
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              A 30-day cohort-based course that helps law enforcement
-              professionals successfully transition into a new career.
+              Unlock your earnings potential, enjoy more free time with less
+              stress by transferring your existing skills into a rewarding new
+              role.
             </p>
             <div className="mt-8 flex gap-4">
               <Button
                 href="https://community.statuszero.co.uk/checkout/the-police-resettlement-course"
                 color="blue"
               >
-                Buy the course
+                Get the course for $199
               </Button>
             </div>
           </div>

@@ -119,7 +119,7 @@ export function Header() {
               color="blue"
               onClick="fathom.trackGoal('ECFHCBGP', 0);"
             >
-              <span>Buy the course</span>
+              <span>Get the course</span>
             </Button>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
