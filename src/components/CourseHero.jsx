@@ -71,7 +71,7 @@ export function CourseHero() {
                 href="https://community.statuszero.co.uk/checkout/the-police-resettlement-course"
                 color="blue"
               >
-                Get the course for $199
+                Join the cohort for $199
               </Button>
             </div>
           </div>
